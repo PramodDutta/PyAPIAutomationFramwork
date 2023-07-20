@@ -10,4 +10,13 @@ def get_payload_auth():
     return data
 
 
+def common_headers():
+    headers = {
+        "Content-Type": "application/json",
+    }
+    return headers
 
+# Read from the Excel and Run a Test case Multiple Times
+# Data driven -
+
+# Read data from Excel and Run the API - 100 Times
