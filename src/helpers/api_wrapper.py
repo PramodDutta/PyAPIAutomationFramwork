@@ -11,6 +11,9 @@ def get_request(url, auth, in_json):
 
 
 def post_request(url, auth, headers, payload, in_json):
+    # OAuth 2.0 -
+    # Bearer Token -
+
     post_response_data = requests.post(url=url, headers=headers, auth=auth, data=json.dumps(payload))
     if in_json is True:
         return post_response_data.json()
