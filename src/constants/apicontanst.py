@@ -12,6 +12,21 @@ def url_create_booking():
     return "https://restful-booker.herokuapp.com/booking"
 
 
+# qa.json
+# url - https://qa-restful-booker.herokuapp.com/booking
+# stage - https://stage-booker.herokuapp.com/booking
+# prod - https://restful-booker.herokuapp.com/booking
+
+
+# .env-qa
+# # qa - https://qa-restful-booker.herokuapp.com/booking
+# .env-stage
+# # stage - https://stage-booker.herokuapp.com/booking
+# ..env-prod
+# # prod - https://restful-booker.herokuapp.com/booking
+
+
+
 def url_create_token():
     return "https://restful-booker.herokuapp.com/auth"
 
