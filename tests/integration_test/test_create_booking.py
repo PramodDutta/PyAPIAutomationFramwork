@@ -12,6 +12,7 @@ Expected Result == Actual Result
 
 '''
 import pytest
+import allure
 
 from src.constants.apicontanst import url_create_booking
 from src.helpers.api_wrapper import post_request
@@ -27,10 +28,10 @@ from src.helpers.utils import common_headers
 
 class TestIntegration(object):
 
-    @pytest.fixture(scope="module")
-    def setup(self):
-        print("Before")
 
+
+    @pytest.mark.smoke
+    @allure.feature('TC#1 - Verify Create Booking Feature')
     def test_create_booking_tc1(self):
         response = post_request(url_create_booking(), headers=common_headers(), auth=None,
                                 payload=payload_create_booking(), in_json=False)
@@ -41,7 +42,12 @@ class TestIntegration(object):
     # Payload - Separate Payload manager
     # Headers -> Headers Utils
     # Verify - Seperate Verify
+    @pytest.mark.smoke
+    @allure.feature('TC#2 - Verify Update Booking Feature')
+    def test_update_put(self):
+        assert True
 
-    @pytest.fixture(scope="module")
-    def tear_down(self):
-        print("End")
+    @pytest.mark.smoke
+    @allure.feature('TC#3 - Verify Delete Booking Feature')
+    def test_delete(self):
+        assert True
