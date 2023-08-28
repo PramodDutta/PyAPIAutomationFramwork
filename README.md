@@ -16,6 +16,10 @@ URL - https://restful-booker.herokuapp.com/apidoc/index.html
 4. Faker, CSV, JSON, YAML.
 5. Run via Commandline - Jenkins
 
+
+<img width="948" alt="Screenshot 2023-08-28 at 5 34 39 PM" src="https://github.com/PramodDutta/PyAPIAutomationFramwork/assets/1409610/98e85a62-00fc-4c97-bb42-3f2ab998dcfa">
+
+
 #### P.S - DB Connection(in future)
 
 ## Install pip packkes
@@ -27,4 +31,5 @@ URL - https://restful-booker.herokuapp.com/apidoc/index.html
 ``
 
 ## How to Run via Jenkins? 
-1. 
+
+<img width="861" alt="Screenshot 2023-08-28 at 5 34 52 PM" src="https://github.com/PramodDutta/PyAPIAutomationFramwork/assets/1409610/e6cf19cd-68bd-4e7b-ab78-28472232efc3">
